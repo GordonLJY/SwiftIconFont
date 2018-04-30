@@ -19,6 +19,7 @@ public struct SwiftIcon {
 public enum Fonts: String {
     case fontAwesome = "FontAwesome"
     case iconic = "open-iconic"
+    case iconify = "android-iconify-material-community"
     case ionicon = "Ionicons"
     case octicon = "octicons"
     case themify = "themify"
@@ -41,9 +42,10 @@ public enum Fonts: String {
             return "map-icons"
         case .materialIcon:
             return "Material Icons"
+        case .iconify:
+            return "Material Design Icons"
         }
     }
-    
 }
 
 func replace(withText string: NSString) -> NSString {
@@ -97,6 +99,9 @@ func getAttributedString(_ text: NSString, ofSize size: CGFloat) -> NSMutableAtt
         } else if fontPrefix == "ma" {
             fontType = Fonts.materialIcon
             fontArr = materialIconArr
+        } else if fontPrefix == "if" {
+            fontType = Fonts.iconify
+            fontArr = iconify
         }
         
         if let _ = fontArr[fontCode] {
@@ -159,8 +164,10 @@ func getAttributedStringForRuntimeReplace(_ text: NSString, ofSize size: CGFloat
                 } else if fontPrefix == "ma" {
                     fontType = Fonts.materialIcon
                     fontArr = materialIconArr
+                } else if fontPrefix == "if" {
+                    fontType = Fonts.iconify
+                    fontArr = iconify
                 }
-                
                 
                 if let _ = fontArr[fontCode] {
                     attributedString.replaceCharacters(in: match.range, with: String.getIcon(from: fontType, code: fontCode)!)
@@ -192,7 +199,7 @@ func GetIconIndexWithSelectedIcon(_ icon: String) -> String {
         var fontCode: String = splitArr[1]
         
         if fontCode.lowercased().range(of: "_") != nil {
-            fontCode = (fontCode as NSString!).replacingOccurrences(of: "_", with: "-")
+            fontCode = (fontCode as NSString).replacingOccurrences(of: "_", with: "-")
         }
         iconIndex = fontCode
     }
@@ -234,6 +241,8 @@ func GetFontTypeWithSelectedIcon(_ icon: String) -> Fonts {
             fontType = Fonts.mapIcon
         } else if fontPrefix == "ma" {
             fontType = Fonts.materialIcon
+        } else if fontPrefix == "if" {
+            fontType = Fonts.iconify
         }
     }
     

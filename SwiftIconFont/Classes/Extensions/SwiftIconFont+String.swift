@@ -21,6 +21,8 @@ public extension String {
             return fontMapIcon(code)
         case .materialIcon:
             return fontMaterialIcon(code)
+        case .iconify:
+            return fontIconify(code)
         case .octicon:
             return fontOcticon(code)
         case .themify:
@@ -73,6 +75,13 @@ public extension String {
     
     public static func fontMaterialIcon(_ code: String) -> String? {
         if let icon = materialIconArr[code] {
+            return icon
+        }
+        return nil
+    }
+    
+    public static func fontIconify(_ code: String) -> String? {
+        if let icon = iconify[code] {
             return icon
         }
         return nil

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F12F6D620960FBB0045900F /* android-iconify-material-community.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */; };
+		4F685BF22094F0DD00F277CD /* Iconify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F685BF12094F0DD00F277CD /* Iconify.swift */; };
 		DA223AA91F160FAC005915D0 /* SwiftIconFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA223AA81F160FAC005915D0 /* SwiftIconFontView.swift */; };
 		DA639C421F62B959004810A6 /* SwiftIconStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA639C411F62B959004810A6 /* SwiftIconStepper.swift */; };
 		DA8D9D151D345A3800F5E693 /* SwiftIconFont.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8D9D141D345A3800F5E693 /* SwiftIconFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "android-iconify-material-community.ttf"; sourceTree = "<group>"; };
+		4F685BF12094F0DD00F277CD /* Iconify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iconify.swift; sourceTree = "<group>"; };
 		DA223AA81F160FAC005915D0 /* SwiftIconFontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftIconFontView.swift; sourceTree = "<group>"; };
 		DA639C411F62B959004810A6 /* SwiftIconStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftIconStepper.swift; sourceTree = "<group>"; };
 		DA8D9D111D345A3800F5E693 /* SwiftIconFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftIconFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +167,7 @@
 				DA8D9D2D1D345A4500F5E693 /* Ionicons.ttf */,
 				DA8D9D2E1D345A4500F5E693 /* map-icons.ttf */,
 				DA8D9D2F1D345A4500F5E693 /* MaterialIcons-Regular.ttf */,
+				4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */,
 				DA8D9D301D345A4500F5E693 /* octicons.ttf */,
 				DA8D9D311D345A4500F5E693 /* open-iconic.ttf */,
 				DA8D9D321D345A4500F5E693 /* themify.ttf */,
@@ -222,6 +227,7 @@
 				DA8D9D3E1D345A4900F5E693 /* IonIcons.swift */,
 				DA8D9D3F1D345A4900F5E693 /* MapIcon.swift */,
 				DA8D9D401D345A4900F5E693 /* MaterialIcon.swift */,
+				4F685BF12094F0DD00F277CD /* Iconify.swift */,
 				DA8D9D411D345A4900F5E693 /* Octicon.swift */,
 				DA8D9D491D345A4900F5E693 /* ThemifyIcon.swift */,
 			);
@@ -285,7 +291,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Sedat Gökbek ÇİFTÇİ";
 				TargetAttributes = {
 					DA8D9D101D345A3800F5E693 = {
@@ -328,6 +334,7 @@
 				DA8D9D391D345A4500F5E693 /* themify.ttf in Resources */,
 				DA8D9D331D345A4500F5E693 /* FontAwesome.ttf in Resources */,
 				DA8D9D361D345A4500F5E693 /* MaterialIcons-Regular.ttf in Resources */,
+				4F12F6D620960FBB0045900F /* android-iconify-material-community.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +374,7 @@
 				DAD008301F90D2A700D4FC34 /* SwiftIconFont+UILabel.swift in Sources */,
 				DAD0082A1F90D24F00D4FC34 /* SwiftIconFont+UIButton.swift in Sources */,
 				DA8D9D4F1D345A4900F5E693 /* MaterialIcon.swift in Sources */,
+				4F685BF22094F0DD00F277CD /* Iconify.swift in Sources */,
 				DA8D9D4E1D345A4900F5E693 /* MapIcon.swift in Sources */,
 				DAD0082C1F90D26700D4FC34 /* SwiftIconFont+UITextField.swift in Sources */,
 				DA8D9D4D1D345A4900F5E693 /* IonIcons.swift in Sources */,
@@ -407,12 +415,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -465,12 +475,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
