@@ -62,6 +62,8 @@ class SwiftIconTextField: UITextField {
                         fontArr = materialIconArr
                     } else if fontPrefix == "if" {
                         fontArr = iconify
+                    } else if fontPrefix == "sm" {
+                        fontArr = segoeMDL2
                     }
                     
                     if let _ = fontArr[fontCode] {

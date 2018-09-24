@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.8.0] - 2018-05-18
+
+- Ionicons v4 support
+
+## [2.7.4] - 2018-05-06
+
+- Segoe MDL2 icons added.
+
 ## [2.7.3] - 2017-12-19
 
 - Removed characters to get rid of warnings
