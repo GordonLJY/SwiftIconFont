@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F12F6D620960FBB0045900F /* android-iconify-material-community.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */; };
-		4F685BF22094F0DD00F277CD /* Iconify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F685BF12094F0DD00F277CD /* Iconify.swift */; };
 		1AF15B94209E196500E20C14 /* Segoe mdl2 assets.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF15B93209E196500E20C14 /* Segoe mdl2 assets.ttf */; };
 		1AF15B96209E198D00E20C14 /* SegoeMDL2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF15B95209E198D00E20C14 /* SegoeMDL2.swift */; };
+		4F12F6D620960FBB0045900F /* android-iconify-material-community.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */; };
+		4F685BF22094F0DD00F277CD /* Iconify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F685BF12094F0DD00F277CD /* Iconify.swift */; };
 		DA223AA91F160FAC005915D0 /* SwiftIconFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA223AA81F160FAC005915D0 /* SwiftIconFontView.swift */; };
 		DA639C421F62B959004810A6 /* SwiftIconStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA639C411F62B959004810A6 /* SwiftIconStepper.swift */; };
 		DA8D9D151D345A3800F5E693 /* SwiftIconFont.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8D9D141D345A3800F5E693 /* SwiftIconFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,10 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "android-iconify-material-community.ttf"; sourceTree = "<group>"; };
-		4F685BF12094F0DD00F277CD /* Iconify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iconify.swift; sourceTree = "<group>"; };
 		1AF15B93209E196500E20C14 /* Segoe mdl2 assets.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe mdl2 assets.ttf"; sourceTree = "<group>"; };
 		1AF15B95209E198D00E20C14 /* SegoeMDL2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegoeMDL2.swift; sourceTree = "<group>"; };
+		4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "android-iconify-material-community.ttf"; sourceTree = "<group>"; };
+		4F685BF12094F0DD00F277CD /* Iconify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iconify.swift; sourceTree = "<group>"; };
 		DA223AA81F160FAC005915D0 /* SwiftIconFontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftIconFontView.swift; sourceTree = "<group>"; };
 		DA639C411F62B959004810A6 /* SwiftIconStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftIconStepper.swift; sourceTree = "<group>"; };
 		DA8D9D111D345A3800F5E693 /* SwiftIconFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftIconFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,25 +297,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Sedat Gökbek ÇİFTÇİ";
 				TargetAttributes = {
 					DA8D9D101D345A3800F5E693 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					DA8D9D1A1D345A3800F5E693 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
 			buildConfigurationList = DA8D9D0B1D345A3800F5E693 /* Build configuration list for PBXProject "SwiftIconFont" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DA8D9D071D345A3800F5E693;
 			productRefGroup = DA8D9D121D345A3800F5E693 /* Products */;
@@ -414,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -474,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -539,7 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tr.sdev.SwiftIconFont;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -558,7 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tr.sdev.SwiftIconFont;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -569,8 +572,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tr.sdev.SwiftIconFontTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -581,8 +583,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tr.sdev.SwiftIconFontTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
