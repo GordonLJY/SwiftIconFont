@@ -1,5 +1,5 @@
 PODS:
-  - SwiftIconFont (3.0.0)
+  - SwiftIconFont (4.0.0)
 
 DEPENDENCIES:
   - SwiftIconFont (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftIconFont: 2ba18554a77c44948dc35b561b344e3c23834a84
+  SwiftIconFont: b3f469e1c77d66abd3417408e922920affc6d8e9
 
 PODFILE CHECKSUM: 55fcbbfbb425c4d9ca8538887e0e6ff87e3dd68b
 
