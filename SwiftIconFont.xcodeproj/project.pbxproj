@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1AF15B94209E196500E20C14 /* Segoe mdl2 assets.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF15B93209E196500E20C14 /* Segoe mdl2 assets.ttf */; };
 		1AF15B96209E198D00E20C14 /* SegoeMDL2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF15B95209E198D00E20C14 /* SegoeMDL2.swift */; };
-		4F12F6D620960FBB0045900F /* android-iconify-material-community.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */; };
 		4F685BF22094F0DD00F277CD /* Iconify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F685BF12094F0DD00F277CD /* Iconify.swift */; };
 		DA223AA91F160FAC005915D0 /* SwiftIconFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA223AA81F160FAC005915D0 /* SwiftIconFontView.swift */; };
 		DA639C421F62B959004810A6 /* SwiftIconStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA639C411F62B959004810A6 /* SwiftIconStepper.swift */; };
@@ -63,7 +62,6 @@
 /* Begin PBXFileReference section */
 		1AF15B93209E196500E20C14 /* Segoe mdl2 assets.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe mdl2 assets.ttf"; sourceTree = "<group>"; };
 		1AF15B95209E198D00E20C14 /* SegoeMDL2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegoeMDL2.swift; sourceTree = "<group>"; };
-		4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "android-iconify-material-community.ttf"; sourceTree = "<group>"; };
 		4F685BF12094F0DD00F277CD /* Iconify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iconify.swift; sourceTree = "<group>"; };
 		DA223AA81F160FAC005915D0 /* SwiftIconFontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftIconFontView.swift; sourceTree = "<group>"; };
 		DA639C411F62B959004810A6 /* SwiftIconStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftIconStepper.swift; sourceTree = "<group>"; };
@@ -105,6 +103,7 @@
 		DAD0082F1F90D2A700D4FC34 /* SwiftIconFont+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+UILabel.swift"; sourceTree = "<group>"; };
 		DAD008331F90D2FC00D4FC34 /* SwiftIconFont+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+String.swift"; sourceTree = "<group>"; usesTabs = 0; };
 		DAD008371F90D44C00D4FC34 /* SwiftIconFont+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+UIImageView.swift"; sourceTree = "<group>"; };
+		F87C52732435B01F00C553AF /* materialdesignicons-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "materialdesignicons-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +171,7 @@
 				DA8D9D2D1D345A4500F5E693 /* Ionicons.ttf */,
 				DA8D9D2E1D345A4500F5E693 /* map-icons.ttf */,
 				DA8D9D2F1D345A4500F5E693 /* MaterialIcons-Regular.ttf */,
-				4F12F6D520960FBB0045900F /* android-iconify-material-community.ttf */,
+				F87C52732435B01F00C553AF /* materialdesignicons-webfont.ttf */,
 				DA8D9D301D345A4500F5E693 /* octicons.ttf */,
 				DA8D9D311D345A4500F5E693 /* open-iconic.ttf */,
 				DA8D9D321D345A4500F5E693 /* themify.ttf */,
@@ -342,7 +341,6 @@
 				DA8D9D331D345A4500F5E693 /* FontAwesome.ttf in Resources */,
 				1AF15B94209E196500E20C14 /* Segoe mdl2 assets.ttf in Resources */,
 				DA8D9D361D345A4500F5E693 /* MaterialIcons-Regular.ttf in Resources */,
-				4F12F6D620960FBB0045900F /* android-iconify-material-community.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

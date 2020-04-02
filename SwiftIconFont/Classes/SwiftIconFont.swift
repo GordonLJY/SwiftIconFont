@@ -19,7 +19,7 @@ public struct SwiftIcon {
 public enum Fonts: String {
     case fontAwesome = "FontAwesome"
     case iconic = "open-iconic"
-    case iconify = "android-iconify-material-community"
+    case iconify = "materialdesignicons-webfont" // 5.0.45 (https://cdnjs.com/libraries/MaterialDesign-Webfont)
     case ionicon = "Ionicons"
     case octicon = "octicons"
     case themify = "themify"
