@@ -9,9 +9,9 @@
 import UIKit
 
 public extension UIImage {
-    convenience init(from font: Fonts, code: String, textColor: Color = .black, backgroundColor: Color = .clear, size: CGSize) {
+    convenience init?(from font: Fonts, code: String, textColor: Color = .black, backgroundColor: Color = .clear, size: CGSize) {
         guard let drawText = String.getIcon(from: font, code: code) else {
-            fatalError("\(code) not found in \(font.rawValue)")
+            return nil
         }
         
         let paragraphStyle = NSMutableParagraphStyle()
@@ -33,9 +33,9 @@ public extension UIImage {
         }
     }
     
-    static func icon(from font: Fonts, iconColor: Color, code: String, imageSize: CGSize, ofSize size: CGFloat) -> UIImage {
+    static func icon(from font: Fonts, iconColor: Color, code: String, imageSize: CGSize, ofSize size: CGFloat) -> UIImage? {
         guard let drawText = String.getIcon(from: font, code: code) else {
-            fatalError("\(code) not found in \(font.rawValue)")
+            return nil
         }
         
         UIGraphicsBeginImageContextWithOptions(imageSize, false, 0)
