@@ -15,7 +15,6 @@
 		DA8D9D151D345A3800F5E693 /* SwiftIconFont.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8D9D141D345A3800F5E693 /* SwiftIconFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8D9D1C1D345A3800F5E693 /* SwiftIconFont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8D9D111D345A3800F5E693 /* SwiftIconFont.framework */; };
 		DA8D9D211D345A3800F5E693 /* SwiftIconFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D9D201D345A3800F5E693 /* SwiftIconFontTests.swift */; };
-		DA8D9D331D345A4500F5E693 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D9D2C1D345A4500F5E693 /* FontAwesome.ttf */; };
 		DA8D9D341D345A4500F5E693 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D9D2D1D345A4500F5E693 /* Ionicons.ttf */; };
 		DA8D9D351D345A4500F5E693 /* map-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D9D2E1D345A4500F5E693 /* map-icons.ttf */; };
 		DA8D9D361D345A4500F5E693 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA8D9D2F1D345A4500F5E693 /* MaterialIcons-Regular.ttf */; };
@@ -47,6 +46,15 @@
 		DAD008301F90D2A700D4FC34 /* SwiftIconFont+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0082F1F90D2A700D4FC34 /* SwiftIconFont+UILabel.swift */; };
 		DAD008341F90D2FC00D4FC34 /* SwiftIconFont+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD008331F90D2FC00D4FC34 /* SwiftIconFont+String.swift */; };
 		DAD008381F90D44C00D4FC34 /* SwiftIconFont+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD008371F90D44C00D4FC34 /* SwiftIconFont+UIImageView.swift */; };
+		E809BAF9248D6A1E0039AAE0 /* SwiftIconFontNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E809BAF8248D6A1E0039AAE0 /* SwiftIconFontNSView.swift */; };
+		E80E87F1248D7B230053475F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E87F0248D7B230053475F /* Types.swift */; };
+		E8244846248D245A0029AA09 /* SwiftIconFont+NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8244845248D245A0029AA09 /* SwiftIconFont+NSButton.swift */; };
+		E884A47D248C21E00002AAAA /* SwiftIconFont+NSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884A47C248C21E00002AAAA /* SwiftIconFont+NSTextField.swift */; };
+		E8D081632488F663005A139F /* SwiftIconFont+NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D081622488F663005A139F /* SwiftIconFont+NSImage.swift */; };
+		E8E47629248855DE005275C4 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E47628248855DE005275C4 /* Foundation.swift */; };
+		E8E4762B24885663005275C4 /* FontAwesome5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4762A24885662005275C4 /* FontAwesome5.swift */; };
+		E8E47631248859A4005275C4 /* ElegantIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E47630248859A4005275C4 /* ElegantIcon.swift */; };
+		E8E4763424885D85005275C4 /* Captain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4763324885D85005275C4 /* Captain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +79,6 @@
 		DA8D9D1B1D345A3800F5E693 /* SwiftIconFontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftIconFontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8D9D201D345A3800F5E693 /* SwiftIconFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftIconFontTests.swift; sourceTree = "<group>"; };
 		DA8D9D221D345A3800F5E693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA8D9D2C1D345A4500F5E693 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		DA8D9D2D1D345A4500F5E693 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
 		DA8D9D2E1D345A4500F5E693 /* map-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "map-icons.ttf"; sourceTree = "<group>"; };
 		DA8D9D2F1D345A4500F5E693 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
@@ -103,6 +110,21 @@
 		DAD0082F1F90D2A700D4FC34 /* SwiftIconFont+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+UILabel.swift"; sourceTree = "<group>"; };
 		DAD008331F90D2FC00D4FC34 /* SwiftIconFont+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+String.swift"; sourceTree = "<group>"; usesTabs = 0; };
 		DAD008371F90D44C00D4FC34 /* SwiftIconFont+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+UIImageView.swift"; sourceTree = "<group>"; };
+		E809BAF8248D6A1E0039AAE0 /* SwiftIconFontNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftIconFontNSView.swift; sourceTree = "<group>"; };
+		E80E87F0248D7B230053475F /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		E8244845248D245A0029AA09 /* SwiftIconFont+NSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+NSButton.swift"; sourceTree = "<group>"; };
+		E884A47C248C21E00002AAAA /* SwiftIconFont+NSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+NSTextField.swift"; sourceTree = "<group>"; };
+		E8D081622488F663005A139F /* SwiftIconFont+NSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftIconFont+NSImage.swift"; sourceTree = "<group>"; };
+		E8E476272488556C005275C4 /* fontcustom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fontcustom.ttf; sourceTree = "<group>"; };
+		E8E47628248855DE005275C4 /* Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		E8E4762A24885662005275C4 /* FontAwesome5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome5.swift; sourceTree = "<group>"; };
+		E8E4762C248856CB005275C4 /* FontAwesome5Free-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontAwesome5Free-Regular.ttf"; sourceTree = "<group>"; };
+		E8E4762D248856CB005275C4 /* FontAwesome5Brands-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontAwesome5Brands-Regular.ttf"; sourceTree = "<group>"; };
+		E8E4762E248856CB005275C4 /* FontAwesome5Free-Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontAwesome5Free-Solid.ttf"; sourceTree = "<group>"; };
+		E8E4762F24885945005275C4 /* ElegantIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElegantIcons.ttf; sourceTree = "<group>"; };
+		E8E47630248859A4005275C4 /* ElegantIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegantIcon.swift; sourceTree = "<group>"; };
+		E8E4763224885D4C005275C4 /* captainicon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = captainicon.ttf; sourceTree = "<group>"; };
+		E8E4763324885D85005275C4 /* Captain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Captain.swift; sourceTree = "<group>"; };
 		F87C52732435B01F00C553AF /* materialdesignicons-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "materialdesignicons-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +189,12 @@
 			isa = PBXGroup;
 			children = (
 				1AF15B93209E196500E20C14 /* Segoe mdl2 assets.ttf */,
-				DA8D9D2C1D345A4500F5E693 /* FontAwesome.ttf */,
+				E8E4762F24885945005275C4 /* ElegantIcons.ttf */,
+				E8E476272488556C005275C4 /* fontcustom.ttf */,
+				E8E4763224885D4C005275C4 /* captainicon.ttf */,
+				E8E4762D248856CB005275C4 /* FontAwesome5Brands-Regular.ttf */,
+				E8E4762C248856CB005275C4 /* FontAwesome5Free-Regular.ttf */,
+				E8E4762E248856CB005275C4 /* FontAwesome5Free-Solid.ttf */,
 				DA8D9D2D1D345A4500F5E693 /* Ionicons.ttf */,
 				DA8D9D2E1D345A4500F5E693 /* map-icons.ttf */,
 				DA8D9D2F1D345A4500F5E693 /* MaterialIcons-Regular.ttf */,
@@ -182,35 +209,24 @@
 		DA8D9D3A1D345A4900F5E693 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DAD008361F90D37D00D4FC34 /* Fonts */,
-				DAD008351F90D35800D4FC34 /* UI */,
-				DAD008221F90D1A100D4FC34 /* Extensions */,
-				DA8D9D3C1D345A4900F5E693 /* FontLoader.swift */,
-				DA8D9D441D345A4900F5E693 /* SwiftIconFont.swift */,
+				E8D081612488F610005A139F /* AppKit */,
+				E8D081602488F20E005A139F /* Shared */,
+				DAD008351F90D35800D4FC34 /* UIKit */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		DAD008221F90D1A100D4FC34 /* Extensions */ = {
+		DAD008351F90D35800D4FC34 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				DAD008201F90D16500D4FC34 /* SwiftIconFont+UIImage.swift */,
-				DAD008231F90D1D500D4FC34 /* SwiftIconFont+NSRange.swift */,
 				DAD008251F90D21F00D4FC34 /* SwiftIconFont+UITabBarItem.swift */,
 				DAD008271F90D23300D4FC34 /* SwiftIconFont+UIBarButtonItem.swift */,
 				DAD008291F90D24F00D4FC34 /* SwiftIconFont+UIButton.swift */,
 				DAD0082B1F90D26700D4FC34 /* SwiftIconFont+UITextField.swift */,
 				DAD0082D1F90D28300D4FC34 /* SwiftIconFont+UITextView.swift */,
 				DAD0082F1F90D2A700D4FC34 /* SwiftIconFont+UILabel.swift */,
-				DAD008331F90D2FC00D4FC34 /* SwiftIconFont+String.swift */,
 				DAD008371F90D44C00D4FC34 /* SwiftIconFont+UIImageView.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		DAD008351F90D35800D4FC34 /* UI */ = {
-			isa = PBXGroup;
-			children = (
 				DA8D9D421D345A4900F5E693 /* SwiftIconBarButtonItem.swift */,
 				DA8D9D431D345A4900F5E693 /* SwiftIconButton.swift */,
 				DA8D9D451D345A4900F5E693 /* SwiftIconLabel.swift */,
@@ -220,13 +236,14 @@
 				DA223AA81F160FAC005915D0 /* SwiftIconFontView.swift */,
 				DA639C411F62B959004810A6 /* SwiftIconStepper.swift */,
 			);
-			path = UI;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		DAD008361F90D37D00D4FC34 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				DA8D9D3B1D345A4900F5E693 /* FontAwesome.swift */,
+				E8E4762A24885662005275C4 /* FontAwesome5.swift */,
 				DA8D9D3D1D345A4900F5E693 /* Iconic.swift */,
 				DA8D9D3E1D345A4900F5E693 /* IonIcons.swift */,
 				DA8D9D3F1D345A4900F5E693 /* MapIcon.swift */,
@@ -235,8 +252,35 @@
 				DA8D9D411D345A4900F5E693 /* Octicon.swift */,
 				DA8D9D491D345A4900F5E693 /* ThemifyIcon.swift */,
 				1AF15B95209E198D00E20C14 /* SegoeMDL2.swift */,
+				E8E47628248855DE005275C4 /* Foundation.swift */,
+				E8E47630248859A4005275C4 /* ElegantIcon.swift */,
+				E8E4763324885D85005275C4 /* Captain.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E8D081602488F20E005A139F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DAD008361F90D37D00D4FC34 /* Fonts */,
+				DA8D9D3C1D345A4900F5E693 /* FontLoader.swift */,
+				DA8D9D441D345A4900F5E693 /* SwiftIconFont.swift */,
+				DAD008331F90D2FC00D4FC34 /* SwiftIconFont+String.swift */,
+				DAD008231F90D1D500D4FC34 /* SwiftIconFont+NSRange.swift */,
+				E80E87F0248D7B230053475F /* Types.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E8D081612488F610005A139F /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				E8D081622488F663005A139F /* SwiftIconFont+NSImage.swift */,
+				E884A47C248C21E00002AAAA /* SwiftIconFont+NSTextField.swift */,
+				E8244845248D245A0029AA09 /* SwiftIconFont+NSButton.swift */,
+				E809BAF8248D6A1E0039AAE0 /* SwiftIconFontNSView.swift */,
+			);
+			path = AppKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +383,6 @@
 				DA8D9D341D345A4500F5E693 /* Ionicons.ttf in Resources */,
 				DA8D9D351D345A4500F5E693 /* map-icons.ttf in Resources */,
 				DA8D9D391D345A4500F5E693 /* themify.ttf in Resources */,
-				DA8D9D331D345A4500F5E693 /* FontAwesome.ttf in Resources */,
 				1AF15B94209E196500E20C14 /* Segoe mdl2 assets.ttf in Resources */,
 				DA8D9D361D345A4500F5E693 /* MaterialIcons-Regular.ttf in Resources */,
 			);
@@ -365,18 +408,27 @@
 				DA8D9D4A1D345A4900F5E693 /* FontAwesome.swift in Sources */,
 				DAD008261F90D21F00D4FC34 /* SwiftIconFont+UITabBarItem.swift in Sources */,
 				DA8D9D531D345A4900F5E693 /* SwiftIconFont.swift in Sources */,
+				E80E87F1248D7B230053475F /* Types.swift in Sources */,
 				DA639C421F62B959004810A6 /* SwiftIconStepper.swift in Sources */,
 				DA8D9D581D345A4900F5E693 /* ThemifyIcon.swift in Sources */,
+				E8E4763424885D85005275C4 /* Captain.swift in Sources */,
+				E8D081632488F663005A139F /* SwiftIconFont+NSImage.swift in Sources */,
 				DAD008341F90D2FC00D4FC34 /* SwiftIconFont+String.swift in Sources */,
 				DA8D9D551D345A4900F5E693 /* SwiftIconTabBarItem.swift in Sources */,
+				E8244846248D245A0029AA09 /* SwiftIconFont+NSButton.swift in Sources */,
 				DA8D9D561D345A4900F5E693 /* SwiftIconTextField.swift in Sources */,
+				E8E47629248855DE005275C4 /* Foundation.swift in Sources */,
+				E8E47631248859A4005275C4 /* ElegantIcon.swift in Sources */,
+				E8E4762B24885663005275C4 /* FontAwesome5.swift in Sources */,
 				DAD008211F90D16500D4FC34 /* SwiftIconFont+UIImage.swift in Sources */,
 				DA8D9D4B1D345A4900F5E693 /* FontLoader.swift in Sources */,
+				E884A47D248C21E00002AAAA /* SwiftIconFont+NSTextField.swift in Sources */,
 				DAD008241F90D1D500D4FC34 /* SwiftIconFont+NSRange.swift in Sources */,
 				DA8D9D571D345A4900F5E693 /* SwiftIconTextView.swift in Sources */,
 				DA223AA91F160FAC005915D0 /* SwiftIconFontView.swift in Sources */,
 				DA8D9D521D345A4900F5E693 /* SwiftIconButton.swift in Sources */,
 				DAD008381F90D44C00D4FC34 /* SwiftIconFont+UIImageView.swift in Sources */,
+				E809BAF9248D6A1E0039AAE0 /* SwiftIconFontNSView.swift in Sources */,
 				DA8D9D501D345A4900F5E693 /* Octicon.swift in Sources */,
 				DAD008301F90D2A700D4FC34 /* SwiftIconFont+UILabel.swift in Sources */,
 				1AF15B96209E198D00E20C14 /* SegoeMDL2.swift in Sources */,

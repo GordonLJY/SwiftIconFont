@@ -2,64 +2,198 @@
 //  ViewController.swift
 //  Example
 //
-//  Created by Sedat Gökbek ÇİFTÇİ on 08/07/16.
-//  Copyright © 2016 Sedat Gökbek ÇİFTÇİ. All rights reserved.
+//  Created by Sedat G. ÇİFTÇİ on 3.06.2020.
+//  Copyright © 2020 Sedat G. ÇİFTÇİ. All rights reserved.
 //
 
 import UIKit
 import SwiftIconFont
 
-class ViewController: UIViewController, UITabBarDelegate {
+class FontProviderTableViewCell: UITableViewCell {
+    @IBOutlet weak var providerNameLbl: UILabel!
+}
 
-    @IBOutlet weak var testLabel1: UILabel!
-    @IBOutlet weak var testLabel2: UILabel!
-    @IBOutlet weak var textField: UITextField!
-    
-    @IBOutlet weak var tabbarItem: UITabBarItem!
-    
-    @IBOutlet weak var tabbar: UITabBar!
+class FontTableViewCell: UITableViewCell {
+    @IBOutlet weak var fontView: SwiftIconFontView!
+    @IBOutlet weak var fontLbl: UILabel!
+}
+
+class ViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    let fonts = [
+        [
+            "title": "Font Awesome 5",
+            "fonts": fontAwesome5IconArr,
+            "prefix": "fa5"
+        ],
+        [
+            "title": "Iconic",
+            "fonts": iconicIconArr,
+            "prefix": "ic"
+        ],
+        [
+            "title": "Ion Icons",
+            "fonts": ioniconArr,
+            "prefix": "io"
+        ],
+        [
+            "title": "Map Icon",
+            "fonts": mapIconArr,
+            "prefix": "mi"
+        ],
+        [
+            "title": "Material Icon",
+            "fonts": materialIconArr,
+            "prefix": "ma"
+        ],
+        [
+            "title": "Octicon",
+            "fonts": octiconArr,
+            "prefix": "oc"
+        ],
+        [
+            "title": "SegoeMDL2",
+            "fonts": segoeMDL2,
+            "prefix": "sm"
+        ],
+        [
+            "title": "Themify Icon",
+            "fonts": temifyIconArr,
+            "prefix": "ti"
+        ],
+        [
+            "title": "Foundation",
+            "fonts": foundationIconArr,
+            "prefix": "fo"
+        ],
+        [
+            "title": "Elegant Icon",
+            "fonts": elegantIconArr,
+            "prefix": "el"
+        ],
+        [
+            "title": "Captain",
+            "fonts": captainIconArr,
+            "prefix": "cp"
+        ]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        testLabel1.parseIcon()
-        testLabel2.font = UIFont.icon(from: .fontAwesome, ofSize: 17.0)
-        testLabel2.text = String.fontAwesomeIcon("twitter")
-        tabbarItem.badgeValue = "1"
-        //textField.runtimeParse = true
-        // Do any additional setup after loading the view, typically from a nib.
-        tabbar.delegate = self
-        tabbar.selectedItem = tabbarItem
-        
-        let imageView: UIImageView = UIImageView(frame: CGRect(x: 120, y: self.view.frame.size.height - 130, width: 150, height: 50))
-        imageView.setIcon(from: .octicon, code: "logo-github", textColor: .black, backgroundColor: .clear, size: nil)
-        self.view.addSubview(imageView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.delegate = self
+        tableView.dataSource = self
+        let label = UILabel()
+        label.font = UIFont.icon(from: .fontAwesome5, ofSize: 15)
+        label.text = String.fontAwesome5Icon("twitter")
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        textField.resignFirstResponder()    
-    }
-    
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
-        let i = (tabBar.items?.index(of: item))! as Int
-        let secondItemView = self.tabbar.subviews[i + 1]
-        let imageView = secondItemView.subviews[0]
-        let otherT : CGAffineTransform = imageView.transform
-    
-        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { () -> Void in
-            imageView.transform = CGAffineTransform(translationX: -100, y: -100)
-        }){ (a) in
-            imageView.transform = otherT
-        }
-
-        if i == 2 {// ionicons tab
-            self.performSegue(withIdentifier: "ShowIonIconsV4", sender: self)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showList", let dest = segue.destination as? FontListViewController, let font = sender as? [String: Any] {
+            dest.font = font
         }
     }
+}
 
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let font = fonts[indexPath.row]
+        performSegue(withIdentifier: "showList", sender: font)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fonts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FontProviderTableViewCell", for: indexPath) as! FontProviderTableViewCell
+        let font = fonts[indexPath.row]
+        cell.providerNameLbl.text = font["title"] as? String
+        return cell
+    }
+}
+
+
+class FontListViewController: UIViewController {
+    var font: [String: Any]!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segControl: UISegmentedControl!
+    
+    var faPrefix = "fa5"
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = font["title"] as? String
+        
+        
+        if self.title != "Font Awesome 5" {
+            segControl.isHidden = true
+        } else {
+            segControl.isHidden = false
+        }
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    @IBAction func changeFontAwesomeType(_ sender: Any) {
+        switch segControl.selectedSegmentIndex {
+        case 0:
+            faPrefix = "fa5"
+        case 1:
+            faPrefix = "fa5s"
+        case 2:
+            faPrefix = "fa5b"
+        default:
+            faPrefix = "fa5"
+        }
+        
+        
+        tableView.reloadData()
+        
+    }
+    
+}
+
+extension FontListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let fonts = font["fonts"] as! [String: String]
+        return fonts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FontTableViewCell", for: indexPath) as! FontTableViewCell
+        let fonts = font["fonts"] as! [String: String]
+        let key  = Array(fonts.keys)[indexPath.row]
+        
+        if self.title == "Font Awesome 5" {
+            cell.fontLbl.text = "\(faPrefix):\(key)"
+            cell.fontView.iconCode = "\(faPrefix):\(key)"
+        } else {
+            let prefix = font["prefix"]!
+            cell.fontLbl.text = "\(prefix):\(key)"
+            cell.fontView.iconCode = "\(prefix):\(key)"
+        }
+        cell.fontView.tintColor = UIColor.random
+        return cell
+    }
+}
+
+extension FontListViewController: UITableViewDelegate {
+    
+}
+
+
+extension UIColor {
+    static var random: UIColor {
+        return UIColor(red: .random(in: 0...1),
+                       green: .random(in: 0...1),
+                       blue: .random(in: 0...1),
+                       alpha: 1.0)
+    }
 }
