@@ -66,6 +66,7 @@ public enum Fonts: String {
     case fontAwesome5Brand = "FontAwesome5Brands-Regular"
     case fontAwesome5Solid = "FontAwesome5Free-Solid"
     case iconic = "open-iconic"
+    case iconify = "MaterialDesignIcons" /// 5.0.45 (https://cdnjs.com/libraries/MaterialDesign-Webfont)
     case ionicon = "Ionicons"
     case octicon = "octicons"
     case themify = "themify"

@@ -26,7 +26,7 @@ public enum Fonts: String {
     case fontAwesome5Brand = "FontAwesome5Brands-Regular"
     case fontAwesome5Solid = "FontAwesome5Free-Solid"
     case iconic = "open-iconic"
-    case iconify = "materialdesignicons-webfont" // 5.0.45 (https://cdnjs.com/libraries/MaterialDesign-Webfont)
+    case iconify = "MaterialDesignIcons" // 5.0.45 (https://cdnjs.com/libraries/MaterialDesign-Webfont)
     case ionicon = "Ionicons"
     case octicon = "octicons"
     case themify = "themify"
@@ -287,6 +287,8 @@ public func GetFontTypeWithSelectedIcon(_ icon: String) -> Fonts {
         
         if fontPrefix == "ic" {
             fontType = Fonts.iconic
+        } else if fontPrefix == "mdi" {
+            fontType = Fonts.iconify
         } else if fontPrefix == "io" {
             fontType = Fonts.ionicon
         } else if fontPrefix == "oc" {

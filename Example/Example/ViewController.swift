@@ -32,6 +32,11 @@ class ViewController: UIViewController {
             "prefix": "ic"
         ],
         [
+            "title": "Iconify",
+            "fonts": iconify,
+            "prefix": "mdi"
+        ],
+        [
             "title": "Ion Icons",
             "fonts": ioniconArr,
             "prefix": "io"
@@ -165,7 +170,7 @@ extension FontListViewController: UITableViewDataSource {
         let fonts = font["fonts"] as! [String: String]
         return fonts.count
     }
-    
+    //materialdesignicons-webfont
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FontTableViewCell", for: indexPath) as! FontTableViewCell
         let fonts = font["fonts"] as! [String: String]
